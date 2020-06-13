@@ -132,8 +132,8 @@ def svg2paths(svg_file_location,
         list: The list of corresponding path attribute dictionaries.
         dict (optional): A dictionary of svg-attributes (see `svg2paths2()`).
     """
-    if os_path.dirname(svg_file_location) == '':
-        svg_file_location = os_path.join(getcwd(), svg_file_location)
+    # if os_path.dirname(svg_file_location) == '':
+        # svg_file_location = os_path.join(getcwd(), svg_file_location)
 
     doc = parse(svg_file_location)
 
